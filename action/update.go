@@ -4,11 +4,11 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/Masterminds/glide/cache"
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
-	"github.com/Masterminds/glide/repo"
+	"github.com/Kasita-Inc/glide/cache"
+	"github.com/Kasita-Inc/glide/cfg"
+	"github.com/Kasita-Inc/glide/msg"
+	gpath "github.com/Kasita-Inc/glide/path"
+	"github.com/Kasita-Inc/glide/repo"
 )
 
 // Update updates repos and the lock file from the main glide yaml.
@@ -104,10 +104,10 @@ func Update(installer *repo.Installer, skipRecursive, stripVendor bool) {
 	}
 
 	if stripVendor {
-		msg.Info("Removing nested vendor and Godeps/_workspace directories...")
+		msg.Info("(Update) Removing nested vendor and Godeps/_workspace directories...")
 		err := gpath.StripVendor()
 		if err != nil {
-			msg.Err("Unable to strip vendor directories: %s", err)
+			msg.Err("(Update) Unable to strip vendor directories: %s", err)
 		}
 	}
 }

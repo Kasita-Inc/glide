@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Masterminds/glide/msg"
+	"github.com/Kasita-Inc/glide/msg"
 )
 
 // NoVendor generates a list of source code directories, excepting `vendor/`.

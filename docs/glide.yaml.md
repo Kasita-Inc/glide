@@ -2,7 +2,7 @@
 
 The `glide.yaml` file contains information about the project and the dependent packages. Here the elements of the `glide.yaml` file are outlined.
 
-    package: github.com/Masterminds/glide
+    package: github.com/Kasita-Inc/glide
     homepage: https://masterminds.github.io/glide
     license: MIT
     owners:

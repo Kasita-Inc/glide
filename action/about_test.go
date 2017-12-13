@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/Masterminds/glide/msg"
+	"github.com/Kasita-Inc/glide/msg"
 )
 
 func TestAbout(t *testing.T) {

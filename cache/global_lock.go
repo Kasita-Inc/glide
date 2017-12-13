@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
+	"github.com/Kasita-Inc/glide/msg"
+	gpath "github.com/Kasita-Inc/glide/path"
 )
 
 var isStarted bool

@@ -5,13 +5,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Masterminds/glide/cache"
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/godep"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
-	"github.com/Masterminds/glide/repo"
-	"github.com/Masterminds/glide/util"
+	"github.com/Kasita-Inc/glide/cache"
+	"github.com/Kasita-Inc/glide/cfg"
+	"github.com/Kasita-Inc/glide/godep"
+	"github.com/Kasita-Inc/glide/msg"
+	gpath "github.com/Kasita-Inc/glide/path"
+	"github.com/Kasita-Inc/glide/repo"
+	"github.com/Kasita-Inc/glide/util"
 	"github.com/Masterminds/semver"
 )
 
@@ -90,10 +90,10 @@ func Get(names []string, installer *repo.Installer, insecure, skipRecursive, str
 	}
 
 	if stripVendor {
-		msg.Info("Removing nested vendor and Godeps/_workspace directories...")
+		msg.Info("(Get) Removing nested vendor and Godeps/_workspace directories...")
 		err := gpath.StripVendor()
 		if err != nil {
-			msg.Err("Unable to strip vendor directories: %s", err)
+			msg.Err("(Get) Unable to strip vendor directories: %s", err)
 		}
 	}
 }
